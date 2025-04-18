@@ -1,9 +1,23 @@
 #include <iostream>
+#include <vector>
+#include <string>
 
+struct node {
+    int info;
+    node* nextlink;
+};
+
+template<typename Type>
 class linkedListDataType
 {
-    void divideAt(linkedListDataType<Type> linked_list, int postion)
+    static void divideAt(linkedListDataType<Type> linked_list, int postion);
+
+
     };
+
+template<typename Type>
+void linkedListDataType<Type>::divideAt(linkedListDataType<Type> linked_list, int postion) {
+}
 
 ////Divide the list at the node with the info item into two
 //sublists.
